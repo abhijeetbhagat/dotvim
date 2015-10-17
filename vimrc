@@ -15,9 +15,9 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-if has('gui_running')
-   set guifont=Monaco:h8
-end
+"if has('gui_running')
+"   set guifont=Monaco:h8
+"end
 
 set foldmethod=syntax
 set foldlevelstart=1
