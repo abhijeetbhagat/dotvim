@@ -5,7 +5,7 @@ filetype plugin indent on
 
 set hlsearch
 set number
-
+set autochdir
 colorscheme koehler
 
 " show existing tab with 4 spaces width
@@ -18,6 +18,10 @@ set expandtab
 "if has('gui_running')
 "   set guifont=Monaco:h8
 "end
+
+if has("win32")
+    set guifont=Consolas:h11
+end
 
 set foldmethod=syntax
 set foldlevelstart=1
