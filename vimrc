@@ -2,16 +2,16 @@ set nocp
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-
+    
 set hlsearch
 set number
 set autochdir
 colorscheme koehler
 
 " show existing tab with 4 spaces width
-set tabstop=4
+set tabstop=2
 " when indenting with '>', use 4 spaces width
-set shiftwidth=4
+set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
 
@@ -34,3 +34,16 @@ let ruby_fold=1               " Ruby
 let sh_fold_enabled=1         " sh
 let vimsyn_folding='af'       " Vim script
 let xml_syntax_folding=1      " XML
+
+" Status Line {  
+        set laststatus=2                             " always show statusbar  
+        set statusline=  
+        set statusline+=%-10.3n\                     " buffer number  
+        set statusline+=%f\                          " filename   
+        set statusline+=%h%m%r%w                     " status flags  
+        set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type  
+        set statusline+=%=                           " right align remainder  
+        set statusline+=0x%-8B                       " character value  
+        set statusline+=%-14(%l,%c%V%)               " line, character  
+        set statusline+=%<%P                         " file position  
+"}  
