@@ -8,6 +8,9 @@ set number
 set autochdir
 colorscheme koehler
 
+
+inoremap {<CR> {<CR>}<Esc>O
+
 " show existing tab with 4 spaces width
 set tabstop=2
 " when indenting with '>', use 4 spaces width
