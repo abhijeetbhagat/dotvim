@@ -6,7 +6,7 @@ filetype plugin indent on
 set hlsearch
 set number
 set autochdir
-colorscheme koehler
+colorscheme flattened_light
 
 
 inoremap {<CR> {<CR>}<Esc>O
