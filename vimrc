@@ -50,3 +50,9 @@ let xml_syntax_folding=1      " XML
         set statusline+=%-14(%l,%c%V%)               " line, character  
         set statusline+=%<%P                         " file position  
 "}  
+
+let g:multi_cursor_quit_key='<C-c>'
+nnoremap <C-c> :call multiple_cursors#quit()<CR>
+
+
+let g:multi_cursor_exit_from_insert_mode=0
