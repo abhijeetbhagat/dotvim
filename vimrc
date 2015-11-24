@@ -56,3 +56,6 @@ nnoremap <C-c> :call multiple_cursors#quit()<CR>
 
 
 let g:multi_cursor_exit_from_insert_mode=0
+
+:vnoremap < <gv
+:vnoremap > >gv
