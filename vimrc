@@ -49,6 +49,7 @@ let xml_syntax_folding=1      " XML
         set statusline+=0x%-8B                       " character value  
         set statusline+=%-14(%l,%c%V%)               " line, character  
         set statusline+=%<%P                         " file position  
+        set statusline+=%{fugitive#statusline()}
 "}  
 
 let g:multi_cursor_quit_key='<C-c>'
