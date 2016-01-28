@@ -60,3 +60,5 @@ let g:multi_cursor_exit_from_insert_mode=0
 
 :vnoremap < <gv
 :vnoremap > >gv
+
+nnoremap <F3> :noh<CR> 
