@@ -8,7 +8,8 @@ set number
 set autochdir
 colorscheme flattened_light
 
-
+nnoremap ; :
+nnoremap : ;
 inoremap {<CR> {<CR>}<Esc>O
 
 " show existing tab with 4 spaces width
