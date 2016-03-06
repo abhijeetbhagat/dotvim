@@ -8,6 +8,7 @@ set number
 set autochdir
 colorscheme flattened_light
 
+
 nnoremap ; :
 nnoremap : ;
 inoremap {<CR> {<CR>}<Esc>O
@@ -25,6 +26,10 @@ set expandtab
 
 if has("win32")
     set guifont=Consolas:h11
+end
+
+if has("unix")
+    set guifont=Ubuntu\ Mono\ 13
 end
 
 set foldmethod=syntax
