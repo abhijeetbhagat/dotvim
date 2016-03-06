@@ -8,6 +8,7 @@ set number
 set autochdir
 colorscheme flattened_light
 
+nnoremap <leader>ev :vsp $VIMRCPATH/vimrc<CR>
 
 nnoremap ; :
 nnoremap : ;
