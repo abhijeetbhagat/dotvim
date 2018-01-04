@@ -2,8 +2,8 @@ set nocp
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-
 set noswapfile    
+set incsearch
 set hlsearch
 set number
 set autochdir
@@ -66,7 +66,18 @@ nnoremap <C-c> :call multiple_cursors#quit()<CR>
 
 let g:multi_cursor_exit_from_insert_mode=0
 
+"indent selection using > and <
 :vnoremap < <gv
 :vnoremap > >gv
 
+"clear selections by pressing F3
 nnoremap <F3> :noh<CR> 
+
+"setup racer
+set hidden
+let g:racer_cmd = "/home/abhi/.cargo/bin/racer"
+let $RUST_SRC_PATH = "/home/abhi/rust_code/src"
+
+"swap esc and capslock in vim and retain original keys after vim quits
+au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
