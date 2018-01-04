@@ -2,11 +2,12 @@ set nocp
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-    
+
+set noswapfile    
 set hlsearch
 set number
 set autochdir
-colorscheme flattened_light
+colorscheme muon
 
 nnoremap <leader>ev :vsp $VIMRCPATH/vimrc<CR>
 
@@ -26,7 +27,7 @@ set expandtab
 "end
 
 if has("win32")
-    set guifont=Consolas:h11
+    set guifont=Consolas:h9
 end
 
 if has("unix")
