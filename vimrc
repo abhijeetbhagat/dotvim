@@ -78,6 +78,9 @@ set hidden
 let g:racer_cmd = "/home/abhi/.cargo/bin/racer"
 let $RUST_SRC_PATH = "/home/abhi/rust_code/src"
 
-"swap esc and capslock in vim and retain original keys after vim quits
-au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
-au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+if has("unix")
+  "swap esc and capslock in vim and retain original keys after vim quits
+  au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+  au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+end
+
