@@ -2,13 +2,17 @@ Installation
 
     git clone git://github.com/abhijeetbhagat/dotvim.git
 
-Vim plugins are installed as git submodules. Check these out by
-running the commands:
+On Windows:
+1. Checkout the repo in $HOME
+2. Rename the folder dotvim to vimfiles
+3. Launch cmd in an elevated mode and create a symbolic link in the HOME dir:
+    mklink _vimrc vimfiles\vimrc
 
-    cd .vim
+4. Init submodules:
+    cd vimfiles
     git submodule init
     git submodule update
 
-Create symlinks:
+Create symlink on Linux:
 
     ln -s ~/.vim/vimrc ~/.vimrc
